@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    tools:context=".Register">
+
+    <TextView
+        android:id="@+id/signuptext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        android:text="Sign Up"
+        android:textColor="@color/black"
+        android:textSize="50dp"
+        android:textStyle="bold" />
+
+
+    <EditText
+        android:layout_below="@+id/signuptext"
+        android:layout_marginTop="50dp"
+        android:id="@+id/enterUser"
+        android:hint="@string/email"
+        android:layout_centerHorizontal="true"
+        android:layout_width="300dp"
+        android:layout_height="50dp" />
+
+    <EditText
+        android:layout_below="@+id/enterUser"
+        android:id="@+id/enterPassword"
+        android:layout_marginTop="20dp"
+        android:hint="@string/password"
+        android:layout_centerHorizontal="true"
+        android:layout_width="300dp"
+        android:layout_height="50dp" />
+
+    <TextView
+        android:layout_below="@+id/enterPassword"
+        android:id="@+id/textView2"
+        android:text="Password should be start with alpha and in 6-16 characters !"
+        android:textColor="@color/black"
+        android:textStyle="italic|bold"
+        android:textSize="14sp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+    <EditText
+        android:layout_below="@+id/textView2"
+        android:id="@+id/enterName"
+        android:hint="@string/fullname"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="300dp"
+        android:layout_height="50dp" />
+
+    <EditText
+        android:layout_below="@+id/enterName"
+        android:id="@+id/enterPhone"
+        android:hint="@string/phone"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="300dp"
+        android:layout_height="50dp" />
+
+    <Button
+        android:layout_below="@+id/enterPhone"
+        android:id="@+id/subBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/submit"
+        android:textColor="@color/white"
+        android:background="@drawable/button_background_login"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        />
+
+    <TextView
+        android:layout_below="@id/subBtn"
+        android:id="@+id/textView"
+        android:text="All information above will be viewed by administrator."
+        android:textColor="@color/black"
+        android:textStyle="italic|bold"
+        android:textSize="14sp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+
+
+</RelativeLayout>
